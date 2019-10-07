@@ -1,13 +1,67 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Weather app</title>
+    <title>Projekat</title>
     <link rel="stylesheet" href="style.css">
-    <script src="app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
+
 <body>
-    
+    <main>
+        <header>
+            <h1>Weather app</h1>
+        </header>
+        <article>
+            <div class="widget">
+                <p id="htemp">Temperature</p>
+                <p id="hday">Day</p>
+                <p id="pwindspeed">windSpeed</p>
+                <p>windDirection: <i id="arrow"></i></p>
+                <p id="ptype">type</p>
+            </div>
+        </article>
+
+        <article class="dayList">
+            <ul class="unorderedList">
+                <li onclick="getWeatherDataByDays(1)" id="1">
+                    <p id="day-1">Mon</p>
+                    <p id="temp-1">Temp</p>
+                </li>
+                <li onclick="getWeatherDataByDays(2)" id="2">
+                    <p id="day-2">Tuesday</p>
+                    <p id="temp-2">Temp</p>
+                </li>
+                <li onclick="getWeatherDataByDays(3)" id="3">
+                    <p id="day-3">Wednesday</p>
+                    <p id="temp-3">Temp</p>
+                </li>
+                <li onclick="getWeatherDataByDays(4)" id="4">
+                    <p id="day-4">Thursday</p>
+                    <p id="temp-4">Temp</p>
+                </li>
+                <li onclick="getWeatherDataByDays(5)" id="5">
+                    <p id="day-5">Friday</p>
+                    <p id="temp-5">Temp</p>
+                </li>
+                <li onclick="getWeatherDataByDays(6)" id="6">
+                    <p id="day-6">Saturday</p>
+                    <p id="temp-6">Temp</p>
+                </li>
+                <li onclick="getWeatherDataByDays(7)" id="7">
+                    <p id="day-7">Sunday</p>
+                    <p id="temp-7">Temp</p>
+                </li>
+
+            </ul>
+        </article>
+
+
+    </main>
+
+    <script src="app.js"></script>
 </body>
+
 </html>
